@@ -1,0 +1,524 @@
+*
+{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ outline: none; border:none;
+ text-decoration: none;
+ text-transform: capitalize;
+ transition: .2s linear;
+ scroll-behavior: smooth;
+ scroll-padding-top: 80px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 254, 254);
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+.logo
+{
+    font-size: 48px;
+    color: #333;
+    font-weight: bold;
+}
+.logo span
+{
+    color:#6aaa6a;
+}
+.menu a
+{
+    font-size: 20px;
+    padding:0 15px;
+    color: #666;
+    font-weight: 600;
+}
+.menu a:hover
+{
+    color:#6aaa6a;
+    transition:0.5s ease;
+}
+#menu-icon
+{
+    color: #666;
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+.icon
+{
+    font-size: 25px;
+    margin-left: 0 10px;
+}
+.icon a:hover
+{
+    color: #6aaa6a;
+}
+.icon a
+{
+    color: #666;
+    padding: 0 6px;
+}
+.search-box
+{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+}
+.search-box input
+{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color:#6aaa6a;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.781);
+}
+.search-box input::placeholder
+{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.search-box.active
+{
+    box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+    top: 100%;
+    transition: 0.3s all linear;
+}
+.menu.active
+{
+    top: 100%;
+    transition: 0.5s all linear;
+}
+
+/*Css cua tung menu*/
+section
+{
+    padding: 85px 40px 0; /*Tren ,Trai*/
+}
+/*Home*/
+.home
+{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/slider-image-1-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-noidung h1
+{
+    font-size: 2.5rem;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.home-noidung p
+{
+    font-size: 1.1rem;
+    color: #464646;
+    margin: 0.5rem 0 1.4rem;
+}
+.btn
+{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background: #6aaa6a;
+    color:#fff;
+    font-weight: 500;
+}
+.btn:hover
+{
+    background-color: #6aaa6a;
+}
+/*----------------------------------------  ABOUT  -----------------------------------------*/
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    gap: 1.5rem;
+}
+.hinh-about
+{
+    border-radius: 0.5rem;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-noidung h2
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.about-noidung a
+{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.about-noidung p
+{
+    color: #464646;
+    font-size: 0.9rem;
+    margin: 1.2rem 0 1.5rem;
+}
+/*----------------------------------------  Product  -----------------------------------------*/
+ .heading
+ {
+    text-align: center;
+ }
+.heading h2
+{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.product-sanpham
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.product-sanpham .khung
+{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+
+}
+.product-sanpham img
+{
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.product-sanpham .khung h3
+{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+}
+.product-sanpham .khung .product-noidung
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+.product-sanpham .khung .product-noidung span
+{
+    padding: 6.5px 1rem;
+    color: #fff;
+    background:#6aaa6a;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.product-sanpham .khung .product-noidung button
+{
+    padding: 0.3rem 1.7rem 0.3rem;
+    color: black;
+    border: 2px solid #6aaa6a;
+    border-radius: 4px;
+    margin: auto;
+    font-weight: 500;
+}
+.product-sanpham .khung .product-noidung button:hover
+{
+    background: #6aaa6a;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+/*----------------------------------------  Reviews  -----------------------------------------*/
+
+.reviews-khung
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.reviews-khung .khung-rv
+{
+    padding: 15px;
+    box-shadow: black;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.reviews-khung .khung-rv img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews-khung .khung-rv h2
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews-khung .khung-rv .danhgia
+{
+    color: #6aaa6a;
+    font-size: 22px;
+}
+.reviews-khung .khung-rv p
+{
+    font-size: 0.9rem;
+    color: #464646;
+    margin-top: 15px;
+}
+.reviews-khung .khung-rv h2
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+.reviews-khung .khung-rv:hover
+{
+    background: #d2d2d2;
+}
+/*----------------------------------------  Contact  -----------------------------------------*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10   px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background: #6aaa6a;
+    color: rgb(255, 255, 255);
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #6aaa6a;
+  }
+  
+  .container {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top:30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/*----------------------------------------  Footer  -----------------------------------------*/
+.footer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.khung-footer
+{
+    text-decoration: none;
+    list-style: none;
+    line-height: 20px;
+    width: 350px;
+}
+.khung-footer h2
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.khung-footer h1
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.khung-footer h1 span
+{
+    color: #6aaa6a;
+}
+.khung-footer .congdong
+{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding-top: 15px;
+}
+.khung-footer .congdong a 
+{
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 0.5rem;
+}
+.khung-footer .congdong a:hover
+{
+    background: #6aaa6a;
+    color: white;
+}
+.khung-footer li a{
+    color: black;
+}
+.khung-footer li a:hover
+{
+    color: #6aaa6a;
+}
+.khung-footer .thongtin
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.khung-footer .thongtin i
+{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.khung-footer-maps
+{
+    width: 430px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+
+}
+.copy
+{
+    padding: 20px;
+    text-align: center;
+    background: #6aaa6a;
+}
+
+/*----------------------------------------  Responsive  -----------------------------------------*/
+@media (max-width:1058px){
+    header{
+        padding: 16px 60px;
+    }
+    section{
+        padding:50px 60px;
+    }
+    .home text h1{
+        font-size: 2.4rem;
+    }
+}
+@media (max-width:991px){
+    header{
+        padding: 16px 4%;
+    }
+    section{
+        padding:50px 4%;
+    }
+    .home text h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        padding:12px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    .menu{
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background:#ffffff;
+        row-gap:1.4rem;
+        padding:20px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    .menu a{
+        color:#666;
+    }
+    .menu a:hover{
+        color:#6aaa6a;
+    }
+    .menu.active{
+        top: 100%;
+    }
+    .about{
+        align-items: center;
+    }
+}
+@media (max-width: 360px){
+    header {
+        padding: 11px 4%; 
+    }
+    .logo img {
+        width: 45px;
+    }
+}
